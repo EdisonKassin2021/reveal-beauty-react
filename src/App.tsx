@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Accueil from "./pages/Accueil";
@@ -18,6 +18,8 @@ function App() {
             <Route path="/a-propos" element={<APropos />} />
             <Route path="/modeles" element={<Modeles />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Route catch-all : redirige vers l'accueil si route inconnue */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />

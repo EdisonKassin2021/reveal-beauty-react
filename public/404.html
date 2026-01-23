@@ -4,12 +4,28 @@
     <meta charset="utf-8" />
     <title>Reveal Beauty</title>
     <script type="text/javascript">
-      // Redirection vers la page d'accueil pour GitHub Pages avec HashRouter
-      var basePath = '/reveal-beauty-react/';
-      window.location.replace(basePath + '#/');
+      // GitHub Pages 404 -> Redirection vers l'app avec HashRouter
+      // Capture le chemin demandé et le convertit en hash route
+      (function() {
+        var basePath = '/reveal-beauty-react';
+        var path = window.location.pathname;
+        
+        // Enlève le basePath du chemin
+        if (path.indexOf(basePath) === 0) {
+          path = path.slice(basePath.length);
+        }
+        
+        // Si le chemin est vide ou juste /, redirige vers #/
+        if (!path || path === '/') {
+          path = '/';
+        }
+        
+        // Redirige vers l'app avec le hash
+        window.location.replace(basePath + '/#' + path);
+      })();
     </script>
   </head>
   <body>
-    Redirection en cours...
+    <noscript>Redirection en cours...</noscript>
   </body>
 </html>
