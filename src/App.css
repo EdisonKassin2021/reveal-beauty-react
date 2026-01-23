@@ -1,0 +1,94 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Espace pour le header fixe */
+}
+
+/* Boutons globaux */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.03em;
+}
+
+.btn-primary {
+  background: var(--color-rose-gold);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(183, 150, 128, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-brown);
+  border: 1.5px solid var(--color-brown);
+}
+
+.btn-secondary:hover {
+  background: var(--color-brown);
+  color: white;
+}
+
+/* Container global */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive - Tablette */
+@media (max-width: 1024px) {
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px;
+  }
+  
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .btn {
+    padding: 0.85rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Très petit mobile */
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 65px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.85rem;
+  }
+}
