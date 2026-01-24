@@ -2,11 +2,21 @@ import { Link } from "react-router-dom";
 import "./Accueil.css";
 
 const Accueil = () => {
+  // Chemin de l'image dans public/ - Vite ajoute automatiquement le base path
+  const heroImage = import.meta.env.BASE_URL + "hero.png";
+
   return (
     <div className="accueil">
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-background"></div>
+        <div className="hero-background">
+          <img
+            src={heroImage}
+            alt="Reveal Beauty Hero"
+            className="hero-image"
+          />
+          <div className="hero-overlay"></div>
+        </div>
         <div className="hero-content">
           <span className="hero-welcome">WELCOME TO</span>
           <h1 className="hero-title">
