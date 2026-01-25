@@ -8,14 +8,14 @@ interface Model {
   longDescription: string;
 }
 
-// Utiliser le base path de Vite pour les images dans public/
-const basePath = import.meta.env.BASE_URL;
+// Chemin de base pour GitHub Pages
+const BASE_URL = "/reveal-beauty-react/";
 
 const models: Model[] = [
   {
     id: 1,
     name: "Lasfora",
-    image: basePath + "solo-ensemble-sexy-blanc.jpeg",
+    image: BASE_URL + "solo-ensemble-sexy-blanc.jpeg",
     description: "Ensemble tailleur élégant",
     longDescription:
       "Elle s'adresse à la femme qui assume sa féminité avec confiance, tout en restant fidèle à une élégance maîtrisée. Lasfora combine structure et fluidité, créant un équilibre entre caractère et douceur. C'est une pièce qui se remarque par sa tenue et la sensation de confiance qu'elle procure.",
@@ -23,7 +23,7 @@ const models: Model[] = [
   {
     id: 2,
     name: "Lenicia",
-    image: basePath + "solo-ensemble-culotte.jpeg",
+    image: BASE_URL + "solo-ensemble-culotte.jpeg",
     description: "Ensemble fluide en blanc",
     longDescription:
       "Elle incarne la femme qui n'a pas besoin d'en faire trop pour être remarquée. Sa force réside dans sa posture, son calme et sa manière d'occuper l'espace avec justesse. Elle offre une élégance fluide et confortable, idéale pour le quotidien comme pour les moments plus posés.",
@@ -31,7 +31,7 @@ const models: Model[] = [
   {
     id: 3,
     name: "Lakelly",
-    image: basePath + "solo-robe-bleue.jpeg",
+    image: BASE_URL + "solo-robe-bleue.jpeg",
     description: "Robe fluide en denim léger",
     longDescription:
       "Elle s'adresse à la femme qui aime se sentir bien dans ses vêtements sans compromis entre confort et allure. Avec ses lignes épurées et son tombé élégant, Lakelly s'intègre facilement à différents moments de la journée. Elle accompagne les femmes actives, conscientes de leur style, qui privilégient une élégance sincère et sans effort.",

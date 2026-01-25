@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Accueil.css";
 
+// Chemin de base pour GitHub Pages
+const BASE_URL = "/reveal-beauty-react/";
+
 const Accueil = () => {
-  // Chemin de l'image dans public/ - Vite ajoute automatiquement le base path
-  const heroImage = import.meta.env.BASE_URL + "hero.png";
+  const heroImage = BASE_URL + "hero.png";
 
   return (
     <div className="accueil">

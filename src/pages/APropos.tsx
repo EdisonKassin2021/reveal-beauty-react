@@ -1,7 +1,7 @@
 import "./APropos.css";
 
-// Utiliser le base path de Vite pour les images dans public/
-const basePath = import.meta.env.BASE_URL;
+// Chemin de base pour GitHub Pages
+const BASE_URL = "/reveal-beauty-react/";
 
 const APropos = () => {
   return (
@@ -25,7 +25,7 @@ const APropos = () => {
               <div
                 className="apropos-image"
                 style={{
-                  backgroundImage: `url('${basePath}model-miroir.jpeg')`,
+                  backgroundImage: `url('${BASE_URL}model-miroir.jpeg')`,
                 }}
               ></div>
             </div>
@@ -55,7 +55,7 @@ const APropos = () => {
               <div
                 className="apropos-image"
                 style={{
-                  backgroundImage: `url('${basePath}reveal-beauty-pack.jpeg')`,
+                  backgroundImage: `url('${BASE_URL}reveal-beauty-pack.jpeg')`,
                 }}
               ></div>
             </div>
