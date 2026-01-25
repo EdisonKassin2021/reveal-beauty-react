@@ -168,7 +168,7 @@
   padding: 6rem 2rem;
   background: 
     linear-gradient(135deg, rgba(183, 150, 128, 0.9) 0%, rgba(150, 115, 95, 0.85) 100%),
-    url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=1920&q=80') center/cover;
+    url('/reveal-beauty-react/model-miroir.jpeg') center/cover;
   color: white;
   text-align: center;
 }

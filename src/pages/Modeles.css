@@ -21,7 +21,7 @@
   bottom: 0;
   background: 
     linear-gradient(135deg, rgba(255, 253, 250, 0.92) 0%, rgba(245, 235, 224, 0.88) 100%),
-    url('https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1920&q=80') center/cover;
+    url('/reveal-beauty-react/reveal-beauty-laptop.jpeg') center/cover;
   z-index: -1;
 }
 

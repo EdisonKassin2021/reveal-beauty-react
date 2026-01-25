@@ -1,5 +1,8 @@
 import "./APropos.css";
 
+// Utiliser le base path de Vite pour les images dans public/
+const basePath = import.meta.env.BASE_URL;
+
 const APropos = () => {
   return (
     <div className="apropos">
@@ -22,8 +25,7 @@ const APropos = () => {
               <div
                 className="apropos-image"
                 style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80')",
+                  backgroundImage: `url('${basePath}model-miroir.jpeg')`,
                 }}
               ></div>
             </div>
@@ -53,8 +55,7 @@ const APropos = () => {
               <div
                 className="apropos-image"
                 style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80')",
+                  backgroundImage: `url('${basePath}reveal-beauty-pack.jpeg')`,
                 }}
               ></div>
             </div>
