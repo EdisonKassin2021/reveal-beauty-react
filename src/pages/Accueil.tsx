@@ -96,10 +96,12 @@ const Accueil = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <h2>La classe à petit prix</h2>
+          <h2>Une élégance qui vous ressemble</h2>
           <p>
-            Reveal Beauty n'impose pas un idéal. Elle accompagne chaque femme
-            dans l'expression de sa propre élégance.
+            Reveal Beauty est là pour les femmes qui doutent,
+            pour celles dont le corps a changé,
+            pour celles qui se cherchent encore.
+            Une élégance douce, pensée pour se réconcilier avec soi.
           </p>
           <Link to="/modeles" className="btn btn-primary">
             Voir nos modèles

@@ -95,7 +95,7 @@
 
 /* Introduction Section */
 .intro-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background: var(--color-cream);
 }
 
@@ -122,7 +122,7 @@
 
 /* Values Section */
 .values-section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-nude) 100%);
 }
 

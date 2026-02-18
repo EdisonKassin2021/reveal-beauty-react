@@ -105,6 +105,39 @@ const APropos = () => {
               </p>
             </div>
           </div>
+
+          <div className="engagement-details">
+            <div className="engagement-block">
+              <h3>Le corps, tel qu'il est</h3>
+              <p>
+                Des vêtements pensés pour accompagner les corps qui changent,
+                qu'ils reviennent d'un post-partum, traversent une prise ou une perte de poids,
+                ou apprennent simplement à se regarder avec plus de douceur.
+              </p>
+            </div>
+
+            <div className="engagement-divider"></div>
+
+            <div className="engagement-block">
+              <h3>Une élégance qui rassure</h3>
+              <p>
+                Une mode chic et mesurée, pensée pour les femmes
+                qui ne savent pas toujours comment s'habiller,
+                mais qui souhaitent se sentir à l'aise, élégantes et fidèles à elles-mêmes.
+              </p>
+            </div>
+
+            <div className="engagement-divider"></div>
+
+            <div className="engagement-block">
+              <h3>Se réconcilier avec soi</h3>
+              <p>
+                Des créations qui aident à reprendre confiance,
+                à se tenir autrement, à s'assumer pleinement,
+                sans comparaison ni pression extérieure.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
